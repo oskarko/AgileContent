@@ -23,6 +23,7 @@ struct APIErrorResponse: Codable {
         self.message = message
     }
 
+    static let genericError: APIErrorResponse = .init(message: "server_wrong_error".localize)
     static let badURL: APIErrorResponse = .init(message: "server_wrong_url".localize)
     static let invalidData: APIErrorResponse = .init(message: "server_wrong_data".localize)
     static let invalidJSON: APIErrorResponse = .init(message: "server_wrong_model".localize)

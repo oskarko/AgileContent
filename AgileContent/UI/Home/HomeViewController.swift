@@ -29,7 +29,6 @@ class HomeViewController: UIViewController {
         
         configureUI()
     }
-    
 
     // MARK: - Selectors
 
@@ -41,7 +40,7 @@ class HomeViewController: UIViewController {
 
     private func configureUI() {
         configureNavigationBar(withTitle: "home_title".localize,
-                               prefersLargeTitles: true,
+                               prefersLargeTitles: false,
                                barTintColor: UIColor.agileContent)
         
         continueButton.setTitle("home_search_button_title".localize, for: .normal)

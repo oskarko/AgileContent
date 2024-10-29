@@ -20,7 +20,7 @@ final class ServiceImpl: ServiceProtocol {
         
         let task = session.dataTask(with: url) { data, response, error in
             guard error == nil else {
-                completion(.failure(.init(message: error?.localizedDescription)))
+                completion(.failure(.genericError))
                 return
             }
             guard let data = data else {

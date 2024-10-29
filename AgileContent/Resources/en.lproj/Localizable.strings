@@ -10,6 +10,7 @@
 "home_title" = "Github Viewer";
 "home_search_button_title" = "Search";
 "server_wrong_nickname" = "User not found.\nPlease enter another name";
+"server_wrong_error" = "A network error has occurred.\nCheck your Internet connection and try again later.";
 "server_wrong_model" = "The server response didnt match our model";
 "server_wrong_url" = "Bad URL format";
 "server_wrong_data" = "Invalid data";

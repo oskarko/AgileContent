@@ -8,6 +8,12 @@
 
 import UIKit
 
+struct Home {
+    let viewController: HomeViewController
+    let viewModel: HomeViewModel
+    let router: HomeRouter
+}
+
 class HomeRouter {
     
     // MARK: - Properties
@@ -18,12 +24,12 @@ class HomeRouter {
     
     static func getViewController() -> UINavigationController {
         let configuration = configureModule()
-        let navigationController = UINavigationController(rootViewController: configuration.vc)
+        let navigationController = UINavigationController(rootViewController: configuration.viewController)
         
         return navigationController
     }
     
-    private static func configureModule() -> (vc: HomeViewController, vm: HomeViewModel, rt: HomeRouter) {
+    private static func configureModule() -> Home {
         let viewController = HomeViewController()
         let router = HomeRouter()
         let viewModel = HomeViewModel()
@@ -35,14 +41,14 @@ class HomeRouter {
 
         router.viewController = viewController
 
-        return (viewController, viewModel, router)
+        return Home(viewController: viewController, viewModel: viewModel, router: router)
     }
     
     // MARK: - Routes
 
     func toDetails(repos: [Repo]) {
-//        let detailsView = DetailsRouter.getViewController(item: item)
-//        self.viewController?.navigationController?.pushViewController(detailsView, animated: true)
+        let detailsView = DetailsRouter.getViewController(repos: repos)
+        self.viewController?.navigationController?.pushViewController(detailsView, animated: true)
     }
     
 }

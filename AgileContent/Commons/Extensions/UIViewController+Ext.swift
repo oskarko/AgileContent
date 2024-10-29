@@ -19,13 +19,17 @@ extension UIViewController {
         appearance.configureWithOpaqueBackground()
         appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
         appearance.backgroundColor = barTintColor
+        appearance.shadowColor = .clear
+        appearance.shadowImage = UIImage()
         
         navigationController?.navigationBar.standardAppearance = appearance
         navigationController?.navigationBar.compactAppearance = appearance
         navigationController?.navigationBar.scrollEdgeAppearance = appearance
         
         navigationController?.navigationBar.prefersLargeTitles = prefersLargeTitles
+        navigationController?.navigationItem.largeTitleDisplayMode = .never
         navigationItem.title = title
+        navigationItem.backButtonTitle = ""
         navigationController?.navigationBar.tintColor = .white
         navigationController?.navigationBar.isTranslucent = true
         
