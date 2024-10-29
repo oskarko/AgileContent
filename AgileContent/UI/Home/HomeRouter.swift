@@ -6,7 +6,7 @@
 //  Copyright © 2021 Oscar R. Garrucho. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class HomeRouter {
     
@@ -16,10 +16,11 @@ class HomeRouter {
 
     // MARK: - Helpers
     
-    static func getViewController() -> HomeViewController {
+    static func getViewController() -> UINavigationController {
         let configuration = configureModule()
-
-        return configuration.vc
+        let navigationController = UINavigationController(rootViewController: configuration.vc)
+        
+        return navigationController
     }
     
     private static func configureModule() -> (vc: HomeViewController, vm: HomeViewModel, rt: HomeRouter) {
@@ -38,5 +39,10 @@ class HomeRouter {
     }
     
     // MARK: - Routes
+
+    func toDetails(repos: [Repo]) {
+//        let detailsView = DetailsRouter.getViewController(item: item)
+//        self.viewController?.navigationController?.pushViewController(detailsView, animated: true)
+    }
     
 }

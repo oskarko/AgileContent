@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  AgileContent
+
+  Created by Oscar Rodriguez Garrucho on 29/10/24.
+  
+*/
+
+"OK" = "Ok";
+"home_title" = "Github Viewer";
+"home_search_button_title" = "Search";
+"server_wrong_nickname" = "User not found.\nPlease enter another name";
+"server_wrong_model" = "The server response didnt match our model";
+"server_wrong_url" = "Bad URL format";
+"server_wrong_data" = "Invalid data";
