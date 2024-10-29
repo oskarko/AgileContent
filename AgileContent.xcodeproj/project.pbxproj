@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		55921AD62CD0DE2000E46DB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55921AD52CD0DE2000E46DB1 /* AppDelegate.swift */; };
 		55921AD82CD0DE2000E46DB1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55921AD72CD0DE2000E46DB1 /* SceneDelegate.swift */; };
-		55921ADA2CD0DE2000E46DB1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55921AD92CD0DE2000E46DB1 /* ViewController.swift */; };
-		55921ADD2CD0DE2000E46DB1 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 55921ADC2CD0DE2000E46DB1 /* Base */; };
 		55921ADF2CD0DE2100E46DB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55921ADE2CD0DE2100E46DB1 /* Assets.xcassets */; };
 		55921AE22CD0DE2100E46DB1 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 55921AE12CD0DE2100E46DB1 /* Base */; };
 		55921AED2CD0DE2100E46DB1 /* AgileContentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55921AEC2CD0DE2100E46DB1 /* AgileContentTests.swift */; };
 		55921AF72CD0DE2100E46DB1 /* AgileContentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55921AF62CD0DE2100E46DB1 /* AgileContentUITests.swift */; };
 		55921AF92CD0DE2100E46DB1 /* AgileContentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55921AF82CD0DE2100E46DB1 /* AgileContentUITestsLaunchTests.swift */; };
+		55921B0D2CD0E16600E46DB1 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55921B092CD0E16600E46DB1 /* HomeRouter.swift */; };
+		55921B0E2CD0E16600E46DB1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55921B0A2CD0E16600E46DB1 /* HomeViewController.swift */; };
+		55921B0F2CD0E16600E46DB1 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55921B0B2CD0E16600E46DB1 /* HomeViewModel.swift */; };
+		55921B102CD0E16600E46DB1 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55921B0C2CD0E16600E46DB1 /* HomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +41,6 @@
 		55921AD22CD0DE2000E46DB1 /* AgileContent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgileContent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55921AD52CD0DE2000E46DB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55921AD72CD0DE2000E46DB1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		55921AD92CD0DE2000E46DB1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		55921ADC2CD0DE2000E46DB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		55921ADE2CD0DE2100E46DB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55921AE12CD0DE2100E46DB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55921AE32CD0DE2100E46DB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +49,10 @@
 		55921AF22CD0DE2100E46DB1 /* AgileContentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgileContentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55921AF62CD0DE2100E46DB1 /* AgileContentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgileContentUITests.swift; sourceTree = "<group>"; };
 		55921AF82CD0DE2100E46DB1 /* AgileContentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgileContentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		55921B092CD0E16600E46DB1 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		55921B0A2CD0E16600E46DB1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		55921B0B2CD0E16600E46DB1 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		55921B0C2CD0E16600E46DB1 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +103,11 @@
 		55921AD42CD0DE2000E46DB1 /* AgileContent */ = {
 			isa = PBXGroup;
 			children = (
+				55921B072CD0E13100E46DB1 /* Resources */,
+				55921B062CD0E12C00E46DB1 /* App */,
+				55921B052CD0E12500E46DB1 /* UI */,
 				55921AD52CD0DE2000E46DB1 /* AppDelegate.swift */,
 				55921AD72CD0DE2000E46DB1 /* SceneDelegate.swift */,
-				55921AD92CD0DE2000E46DB1 /* ViewController.swift */,
-				55921ADB2CD0DE2000E46DB1 /* Main.storyboard */,
 				55921ADE2CD0DE2100E46DB1 /* Assets.xcassets */,
 				55921AE02CD0DE2100E46DB1 /* LaunchScreen.storyboard */,
 				55921AE32CD0DE2100E46DB1 /* Info.plist */,
@@ -125,6 +130,39 @@
 				55921AF82CD0DE2100E46DB1 /* AgileContentUITestsLaunchTests.swift */,
 			);
 			path = AgileContentUITests;
+			sourceTree = "<group>";
+		};
+		55921B052CD0E12500E46DB1 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				55921B082CD0E13800E46DB1 /* Home */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		55921B062CD0E12C00E46DB1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		55921B072CD0E13100E46DB1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		55921B082CD0E13800E46DB1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				55921B092CD0E16600E46DB1 /* HomeRouter.swift */,
+				55921B0B2CD0E16600E46DB1 /* HomeViewModel.swift */,
+				55921B0A2CD0E16600E46DB1 /* HomeViewController.swift */,
+				55921B0C2CD0E16600E46DB1 /* HomeViewController.xib */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +271,7 @@
 			files = (
 				55921ADF2CD0DE2100E46DB1 /* Assets.xcassets in Resources */,
 				55921AE22CD0DE2100E46DB1 /* Base in Resources */,
-				55921ADD2CD0DE2000E46DB1 /* Base in Resources */,
+				55921B102CD0E16600E46DB1 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +296,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55921ADA2CD0DE2000E46DB1 /* ViewController.swift in Sources */,
 				55921AD62CD0DE2000E46DB1 /* AppDelegate.swift in Sources */,
 				55921AD82CD0DE2000E46DB1 /* SceneDelegate.swift in Sources */,
+				55921B0D2CD0E16600E46DB1 /* HomeRouter.swift in Sources */,
+				55921B0E2CD0E16600E46DB1 /* HomeViewController.swift in Sources */,
+				55921B0F2CD0E16600E46DB1 /* HomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +337,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		55921ADB2CD0DE2000E46DB1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				55921ADC2CD0DE2000E46DB1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		55921AE02CD0DE2100E46DB1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -446,9 +478,7 @@
 				INFOPLIST_FILE = AgileContent/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,9 +503,7 @@
 				INFOPLIST_FILE = AgileContent/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
